@@ -1,10 +1,11 @@
+package Modelos.Model;
 
 import java.util.*;
 
 /**
  * 
  */
-public class Rectángulo {
+public class rectangulo {
 
     /**
      * Default constructor
@@ -24,7 +25,7 @@ public class Rectángulo {
      * @param base  
      * @param altura
      */
-    public Rectángulo(int base , int altura) {
+    public rectangulo(int base , int altura) {
         // TODO implement here
     	this.base = base;
     	this.altura = altura;
@@ -34,7 +35,7 @@ public class Rectángulo {
      * @param base 
      * @param altura
      */
-    public Rectángulo() {
+    public rectangulo() {
         // TODO implement here
     	this.base = 1;
     	this.altura = 1;
@@ -76,13 +77,13 @@ public class Rectángulo {
      * @param base 
      * @param altura
      */
-    public int getPerimetro(int base, int altura) {
+    public int getPerimetro() {
         // TODO implement here
-    	int perimetro = 2 * base + 2 * altura;
+    	int perimetro = 2 * this.base + 2 * this.altura;
     	return perimetro;
     }
-    public int getArea (int base, int altura) {
-    	int area = base * altura;
+    public int getArea () {
+    	int area = this.base * this.altura;
     	return area;
     }
 
