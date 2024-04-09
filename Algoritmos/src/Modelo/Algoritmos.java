@@ -15,4 +15,14 @@ public abstract class Algoritmos {
 		
 		return suma;
 	}
+	
+	public static int factorial (int numero) {
+		int factorial = 1;
+		for (int i = 1; i <= numero; i++) {
+			factorial *= i;
+			
+		}
+		
+		return factorial;
+	}
 }
