@@ -8,6 +8,9 @@ public abstract class Algoritmos {
 	 * @return el sumatorio del numeros especificado
 	 */
 	public static int sumatorio (int numero) {
+		if(numero < 0) {
+			throw new IllegalArgumentException("El numero debe ser igual o superior a cero");
+		}
 		int suma = 0;
 		for (int i = 1; i <= numero; i++) {
 			suma += i;

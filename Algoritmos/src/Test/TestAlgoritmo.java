@@ -21,5 +21,13 @@ class TestAlgoritmo {
 		double factorialObtenido = Algoritmos.factorial(5);
 		assertEquals(factorialEsperado, factorialObtenido);
 	}
+	@Test
+	void sumatorioParametroIncorrecto(){
+		Exception excepcion = assertThrows(IllegalArgumentException.class, 
+											() -> Algoritmos.sumatorio(-1));
+		String esperado = "El numero debe ser igual o superior a cero";
+		String obtenido = excepcion.getMessage();
+		assertEquals(esperado, obtenido);
+	}
 	
 }
